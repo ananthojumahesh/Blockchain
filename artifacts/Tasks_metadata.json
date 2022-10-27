@@ -19,8 +19,57 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "completeTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getTaskByIndex",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "task",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isCompleted",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Tasks.Task",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "getTask",
+				"name": "getTasks",
 				"outputs": [
 					{
 						"components": [
@@ -77,10 +126,11 @@
 	},
 	"sources": {
 		"todo.sol": {
-			"keccak256": "0x27ab8e3c6e748561b218573a4a747bb1459bdfc40a777ea9f1506ba5fecf7c86",
+			"keccak256": "0xc6be68d8a32b8c98da04a119b86d6ee7e4bc11711a449ad58e94ab9857c79e4c",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2d9567f79ffe52321b1dbeaf29c8d03d71cba1950622d082acb88f266b81d6cd",
-				"dweb:/ipfs/Qmc5P2fT7dSwHHmq4FvU3YMLoD4Dmg6vQW9pifbcWE4Sxv"
+				"bzz-raw://0e8eaacc2b0b5ba50dd89bcce5bc1ae252952810d7306f3e55dd3b562834d62d",
+				"dweb:/ipfs/QmeThakS4EgWwcjDPMmPVmB6d5m1m8nLEu5erF6EDfZFu5"
 			]
 		}
 	},
